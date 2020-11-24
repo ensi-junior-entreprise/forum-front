@@ -5,7 +5,7 @@ import Alert from 'react-bootstrap/Alert'
 import axios from 'axios';
 var FormData = require('form-data');
 const From = () => {
-    const path="https://testing-forum-ensi.herokuapp.com//add"
+    const path="https://testing-forum-ensi.herokuapp.com/add"
     const list_institut=["ENSI","ENSIT"]
     const [file, setFile] = useState()
     const [fileName, setFileName] = useState('')

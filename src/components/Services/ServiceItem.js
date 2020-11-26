@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
+
 function ServiceItem(props) {
     const serviceURL = `/service/${props.title.split(' ').join('-').toLowerCase()}?id=${props.id}`
     return (
@@ -15,8 +16,8 @@ function ServiceItem(props) {
                         <h5>{props.title}</h5>
                     </figcaption>
                 </figure>
-                <div className="service-content">
-                    <div className="service-content-inner">
+                <div className="service-content" >
+                    <div className="service-content-inner" >
                         <h5>
                             {props.title}
                         </h5>

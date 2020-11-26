@@ -13,7 +13,7 @@ function Services({classes}) {
         dots: true,
         autoplay: true,
         speed:500,
-        className: "testimonial-content--3 testimonial-grid",
+        className: `testimonial-content--3 testimonial-grid`,
         responsive: [
             {
                 breakpoint: 1200,
@@ -51,8 +51,32 @@ function Services({classes}) {
                                     <ServiceItem key={service.id} id={service.id} title={service.title} text={service.shortDesc} thumb={service.thumb}/>
                                 ))
                             }
-                            
+
+                          <div className="service-item">
+                <figure className="service-thumb">
+                    
+                        <img src={require('../../assets/img/partenaires/iobeya.jpg' )} alt="IObeya"/>
+                    
+
+                    <figcaption className="service-txt">
+                        <h5>IObeya</h5>
+                    </figcaption>
+                </figure>
+                <div className="service-content" >
+                    <div className="service-content-inner" >
+                        <h5>
+                            IObeya
+                        </h5>
+                        <p>Faites partie de l’aventure !<br/>
+"Depuis près de 10 ans, iObeya est une aventure logicielle et humaine.
+Notre potion magique est de miser en priorité sur l’humain, en considérant que le succès de l'entreprise est la conséquence d'une équipe performante, unie par des valeurs fortes et un grand enthousiasme."
+<br/>Cyril Daloz - CEO<br/>
+Nos valeurs fondamentales nous guident sur la voie de la croissance.</p>
+                    </div>
+                </div>
+            </div>
                         </SlickSlider>
+                        
                     </Fade>
                 </div>
             </div>

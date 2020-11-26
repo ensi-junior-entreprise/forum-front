@@ -6,7 +6,7 @@ const FormInput = ({tag,type,name,placeholder,classes,list_id,list,required,onCh
         <div className="single-input-item">
             <label>
                 {(()=>{
-                    if((tag === 'input')&&(list!=undefined)){
+                    if((tag === 'input')&&(list!==undefined)){
                          return <><input onChange={(event)=>onChange(event)} type={type} name={name} placeholder={placeholder} className={classes} list={list_id} required={required}/> <datalist id={list_id}>{list.map((el,ind) =><option key={ind} value={el}>{el}</option>)}</datalist></>
                     }if((tag === 'input')){
                         return   <input onChange={(event)=>onChange(event)} type={type} name={name} placeholder={placeholder} className={classes} required={required}/> 

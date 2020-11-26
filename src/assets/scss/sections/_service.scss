@@ -65,9 +65,11 @@
     height: 100%;
     width: 100%;
     pointer-events: none;
+    font-size: 13px;
 
     @media #{$sm-device} {
       padding: 15px;
+      font-size: 11px;
     }
 
     h5 {

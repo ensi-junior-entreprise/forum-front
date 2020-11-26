@@ -123,6 +123,7 @@
 }.active{
     color:#2EA3DD;
 }
+
 @media (max-width: 800px){
     .single-countdown__time{
         width:100px;

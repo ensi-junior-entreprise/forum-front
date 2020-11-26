@@ -24,13 +24,16 @@ class FunfactItem extends Component {
                         <CountUp start={this.state.appear ? 0 : null} end={this.props.counterNumber}>
                             {({ countUpRef }) => (
                                 <div>
+                                    {this.props.before}
                                     <span ref={countUpRef} />
                                     <VisibilitySensor
                                         onChange={(isVisible) => this.visibleChangeHandler(isVisible)}>
                                         <span className="sr-only">+</span>
                                     </VisibilitySensor>
+                                    {this.props.after}
                                 </div>
                             )}
+                            
                         </CountUp>
                     </h2>
 

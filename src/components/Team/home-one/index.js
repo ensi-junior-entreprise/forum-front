@@ -5,6 +5,7 @@ import Member from "./Member";
 import {Reveal} from 'react-reveal';
 import teamBg from '../../../assets/img/team/tec.png';
 import Teams from '../../../data/Team/home-one';
+import ServiceItem from '../../Services/ServiceItem';
 
 function Team() {
     const settings = {
@@ -57,7 +58,7 @@ function Team() {
                                 {
                                     Teams.map(team => (
                                         <div key={team.id}>
-                                            <Member id={team.id} name={team.name} designation={team.designation} profilePic={team.profilePic} />
+                                            <ServiceItem key={team.id} id={team.id} title={team.name} text={team.designation} thumb={team.profilePic}/>
                                         </div>
                                     ))
                                 }

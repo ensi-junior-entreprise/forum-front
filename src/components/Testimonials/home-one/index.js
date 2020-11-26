@@ -7,18 +7,11 @@ import { Reveal,Fade } from 'react-reveal';
 
 function Testimonials() {
     const settings = {
-        slidesToShow: 2,
+        slidesToShow: 1,
         arrows: false,
         dots: true,
+        autoplay: true,
         className: "testimonial-content--3 testimonial-grid",
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
     }
 
     return (
@@ -28,8 +21,7 @@ function Testimonials() {
                     <Fade big>
                         <div className="col-lg-6 m-auto text-center">
                             <SectionTitle
-                                title="TESTIMONIALS"
-                                heading="Our Customer <br/>Loves What we do"
+                                heading="Témoignages de nos partenaires"
                             />
                         </div>
                     </Fade>

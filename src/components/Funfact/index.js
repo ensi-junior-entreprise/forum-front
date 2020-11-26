@@ -11,7 +11,7 @@ function Funfact() {
                 <div className="row mtn-40">
                     {
                         Funfacts.map(funfact=>(
-                            <FunfactItem key={funfact.id} counterNumber={funfact.counterNumber} counterText={funfact.counterText} />
+                            <FunfactItem key={funfact.id} before={funfact.before} after={funfact.after} counterNumber={funfact.counterNumber} counterText={funfact.counterText} />
                         ))
                     }
                 </div>

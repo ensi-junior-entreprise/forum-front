@@ -23,10 +23,8 @@ function Plateforme() {
               </Fade>
               <Reveal bottom>
                 <p className="description" >
-                  Now UI Kit comes with 100 custom icons made by our friends from
-                  NucleoApp. The official package contains over 2.100 thin icons
-                  which are looking great in combination with Now UI Kit PRO Make
-                  sure you check all of them and use those that you like the most.
+                Nous mettrons à votre disposition une plateforme assez avnacée pour vous garantir une expérience inédite ! Vous permettant d’interagir avec les représentants des entreprises grâce à des stands en 3D, vous aurez la possibilité de déposer vos CVs ainsi que de décrocher des entretiens en ligne.
+Ce n’est pas fini ! L’auditorium vous offrira l’opportunité d’assister à une diffusion directe de la table ronde.
                 </p>
               </Reveal>
             </Container>

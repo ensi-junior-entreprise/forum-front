@@ -20,7 +20,7 @@ export default function Video (props) {
                             date={new Date("November 28, 2020 8:30:00")}
                             renderer={Renderer}
                             />
-                            <Link to={`${process.env.PUBLIC_URL }/register`} className="btn-outline" style={{marginTop:"3%"}}>S'inscrire</Link>
+                            <Link to="/register" className="btn-outline" style={{marginTop:"3%"}}>S'inscrire</Link>
                         </div> 
                     </Reveal>  
                 </div> 

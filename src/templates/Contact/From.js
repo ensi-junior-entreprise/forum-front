@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import FormInput from "../../components/UI/Input";
 import Alert from 'react-bootstrap/Alert'
 import axios from 'axios';
+import { Modal } from 'react-bootstrap';
 var FormData = require('form-data');
 const From = () => {
-    const path="https://testing-forum-ensi.herokuapp.com/add"
+    const path="http://163.172.249.31:1998/add"
     const list_institut=["ENSI","ENSIT"]
     const [file, setFile] = useState()
     const [fileName, setFileName] = useState('')
@@ -46,9 +47,7 @@ const From = () => {
         fd.append('accord',accordValue);
         fd.append('institut',institutValue);
         fd.append('fileValue',fileValue);
-        console.log(fd);
-        console.log(file);
-        axios.post(`${path}`, fd)
+        axios.post(path, fd)
         .then(res => {
             setLoading(false);
             setSent(res.data.sent)
@@ -67,6 +66,22 @@ const From = () => {
             <Alert show={error} variant={'danger'}>
                 Une erreur s'est produite lors de votre inscription veuillez vous inscrire une nouvelle fois
             </Alert>
+            <Modal
+        size="md"
+        show={sent}
+        onHide={() => setSent(false)}
+        aria-labelledby="example-modal-sizes-title-sm"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-sm" >
+           Félicitations !
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{textAlign:'center'}}>
+            <i style={{fontSize:'100px',color:'#2EA3DD'}}className="fa fa-check"></i>
+            <h5>Vous venez de finaliser votre inscription à la 15ème édition du forum annuel de l'ENSI</h5>
+        </Modal.Body>
+      </Modal>
             <form id="contact-form" onSubmit={(event)=>handleSubmit(event)} encType="multipart/form-data">
                 <div className="row">
                     <div className="col-md-6">
@@ -115,12 +130,12 @@ const From = () => {
                         />
                     </div>
                     <div className="col-md-6">
-                        <div style={{display:fileType!=''?'':'none',width:"60px",textAlign:'center',paddingBottom:'15px'}}>
+                        <div style={{display:fileType!==''?'':'none',width:"60px",textAlign:'center',paddingBottom:'15px'}}>
                             <div style={{width:"60px"}}>
-                                <img src={ require(`../../assets/img/icons/pdf.png`)} style={{display:fileType!='pdf'?'none':''}}  width="100%"/>
+                                <img src={ require(`../../assets/img/icons/pdf.png`)} style={{display:fileType!=='pdf'?'none':''}}  width="100%"/>
                                 <img src={ require(`../../assets/img/icons/doc.jpg`)} style={{display: !['docx','doc'].includes(fileType)?'none':''}}  width="150%"/>
                                 <img src={ require(`../../assets/img/icons/ppt.png`)} style={{display: !['pptx','ppt'].includes(fileType)?'none':''}}  width="150%"/>
-                                <span onClick={()=>close()} style={{display:fileType!='pdf'?'none':'',fontSize:'20px',position:'absolute',top:"-11px",left:'9px',cursor:'pointer'}}><i  className='fa fa-times'/></span>
+                                <span onClick={()=>close()} style={{display:fileType!=='pdf'?'none':'',fontSize:'20px',position:'absolute',top:"-11px",left:'9px',cursor:'pointer'}}><i  className='fa fa-times'/></span>
                                 <span onClick={()=>close()} style={{display: !['docx','doc','pptx','ppt'].includes(fileType)?'none':'',fontSize:'20px',position:'absolute',top:"-10px",left:'15px',cursor:'pointer'}}><i  className='fa fa-times'/></span>
                             </div>
                             <p style={{fontSize:'10px'}}>{fileName}</p>

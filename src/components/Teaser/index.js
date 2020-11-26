@@ -35,7 +35,7 @@ function Teaser() {
             
             <Col lg="6" md="12">
             <Reveal right>
-              <ReactPlayer  width='100%' height='' loop={true} playing={true}  muted={true} url={require("../../assets/videos/1234.m4v")} />
+              <ReactPlayer  width='100%' height='' loop={true} playing={true}  muted={true} url="https://drive.google.com/file/d/1YT-Snr-4zlBVY1nbTL87_KVDo4M5Sio0/view?usp=sharing" />
             </Reveal>
             </Col>
           </Row>

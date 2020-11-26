@@ -5,6 +5,7 @@ import List from "../UI/List";
 import LI from "../UI/List/Item";
 import {Link} from "react-router-dom";
 import Logo from '../../assets/img/logo-dark.png'
+import { ExternalLink } from 'react-external-link';
 
 function Footer() {
     return (
@@ -15,12 +16,10 @@ function Footer() {
                         <div className="widget-item">
                             <div className="about-widget">
                                 <Link to={`${process.env.PUBLIC_URL + "/"}`}>
-                                    <img src={require("../../assets/img/logo/EJE ffffff.png")} alt="Logo"/>
+                                    <img src={require("../../assets/img/logo/eje b.png")} alt="Logo"/>
                                 </Link>
 
-                                <Text>
-                                    During the summer my wife and I got to go on an amazing road trip in Vancouver.
-                                </Text>
+
 
                                 <Text classes="copyright-txt">
                                     &copy; {new Date().getFullYear()} ENSI Junior Entreprise. All Rights Reserved.
@@ -31,23 +30,21 @@ function Footer() {
 
 
                     <div className="col-md-4 col-lg-2 ml-auto">
-                        <Widget title="Social Links">
+                        <Widget title="Nos réseaux">
                             <List classes="widget-list">
-                                <LI><Link to="https://facebook.com/hasthemes/" target={'_blank'}>Facebook</Link></LI>
-                                <LI><Link to="https://www.instagram.com/" target={'_blank'}>Instagram</Link></LI>
-                                <LI><Link to="https://dribbble.com/hastech/" target={'_blank'}>LinkedIn</Link></LI>
-                                <LI><Link to="https://twitter.com/hasthemes/" target={'_blank'}>Twitter</Link></LI>
+                                <LI><ExternalLink href="https://www.facebook.com/ENSI.Junior.Entreprise" target={'_blank'}>Facebook</ExternalLink></LI>
+                                <LI><ExternalLink href="https://www.instagram.com/ensijunior/" target={'_blank'}>Instagram</ExternalLink></LI>
+                                <LI><ExternalLink href="https://www.linkedin.com/company/ensi-junior-entreprise/?originalSubdomain=tn" target={'_blank'}>LinkedIn</ExternalLink></LI>
                                 
                             </List>
                         </Widget>
                     </div>
 
                     <div className="col-md-4 col-lg-3">
-                        <Widget title="Contact Us">
+                        <Widget title="Nous contacter">
                             <address>
-                                2005 Stokes Isle Apartment. 896, Washington 10010, USA <br/>
-                                https://example.com <br/>
-                                (+68) 120034509
+                                Campus Universitaire de La Manouba, 2010, Tunis, Tunisie <br/>
+                                (+216) 26800064
                             </address>
                         </Widget>
                     </div>

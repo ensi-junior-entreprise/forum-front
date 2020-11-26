@@ -4,7 +4,6 @@ import Widget from "../UI/Widget";
 import List from "../UI/List";
 import LI from "../UI/List/Item";
 import {Link} from "react-router-dom";
-import Logo from '../../assets/img/logo-dark.png'
 import { ExternalLink } from 'react-external-link';
 
 function Footer() {
@@ -15,7 +14,7 @@ function Footer() {
                     <div className="col-lg-4 order-4 order-lg-0">
                         <div className="widget-item">
                             <div className="about-widget">
-                                <Link to={`${process.env.PUBLIC_URL + "/"}`}>
+                                <Link to="/">
                                     <img src={require("../../assets/img/logo/eje b.png")} alt="Logo"/>
                                 </Link>
 

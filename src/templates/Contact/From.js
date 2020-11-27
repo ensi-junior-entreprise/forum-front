@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Modal } from 'react-bootstrap';
 var FormData = require('form-data');
 const From = () => {
-    const path="http://localhost:1998/add"
+    const path="http://forum-ensi:1998/add"
     const [file, setFile] = useState()
     const [fileName, setFileName] = useState('')
     const [fileType, setFileType] = useState('')

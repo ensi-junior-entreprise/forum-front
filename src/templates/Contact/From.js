@@ -65,7 +65,7 @@ const From = () => {
     return (
         <div className="contact-form-wrap">
             <Alert show={error} variant={'danger'}>
-                {!msg? "Vous êtes déjè inscrit":"Une erreur s'est produite lors de votre inscription veuillez vous inscrire une nouvelle fois"}
+                {msg? "Vous êtes déjè inscrit":"Une erreur s'est produite lors de votre inscription veuillez vous inscrire une nouvelle fois"}
             </Alert>
             <Modal
         size="md"

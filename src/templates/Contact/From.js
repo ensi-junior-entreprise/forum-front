@@ -7,7 +7,6 @@ import { Modal } from 'react-bootstrap';
 var FormData = require('form-data');
 const From = () => {
     const path="http://localhost:1998/add"
-    const list_institut=["ENSI","ENSIT"]
     const [file, setFile] = useState()
     const [fileName, setFileName] = useState('')
     const [fileType, setFileType] = useState('')
@@ -58,7 +57,7 @@ const From = () => {
         })
         .catch(()=>{setError(true);
             setLoading(false);
-            setMsg(false)
+            setMsg(true)
             setTimeout(()=>setError(false),3000)
         });
         

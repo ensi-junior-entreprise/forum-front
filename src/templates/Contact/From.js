@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Modal } from 'react-bootstrap';
 var FormData = require('form-data');
 const From = () => {
-    const path="http://163.172.249.31:1998/add"
+    const path="http://localhost:1998/add"
     const list_institut=["ENSI","ENSIT"]
     const [file, setFile] = useState()
     const [fileName, setFileName] = useState('')
@@ -20,6 +20,7 @@ const From = () => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
     const [sent, setSent] = useState(false)
+    const [msg, setMsg] = useState(false)
     const handleFile=(event)=>{
         setFileName(event.target.value.replace('C:\\fakepath\\',''));
         setFileType(event.target.value.slice(event.target.value.lastIndexOf('.')+1-event.target.value.length));
@@ -52,11 +53,12 @@ const From = () => {
             setLoading(false);
             setSent(res.data.sent)
             setError(res.data.error)
+            setMsg(res.data.msg)
             setTimeout(()=>setError(false),3000)
-            console.log(res.data);
         })
         .catch(()=>{setError(true);
             setLoading(false);
+            setMsg(false)
             setTimeout(()=>setError(false),3000)
         });
         
@@ -64,7 +66,7 @@ const From = () => {
     return (
         <div className="contact-form-wrap">
             <Alert show={error} variant={'danger'}>
-                Une erreur s'est produite lors de votre inscription veuillez vous inscrire une nouvelle fois
+                {!msg? "Vous êtes déjè inscrit":"Une erreur s'est produite lors de votre inscription veuillez vous inscrire une nouvelle fois"}
             </Alert>
             <Modal
         size="md"
@@ -89,7 +91,7 @@ const From = () => {
                             tag={'input'}
                             type={'text'}
                             name={'nom'}
-                            placeholder={'Nom *'}
+                            placeholder={'Nom et Prénom *'}
                             required={true}
                             onChange={(event)=>handeleName(event)}
                         />
@@ -122,9 +124,7 @@ const From = () => {
                             tag={'input'}
                             type={'text'}
                             name={'institut'}
-                            placeholder={'Institut *'}
-                            list_id={'institut'}
-                            list={list_institut}
+                            placeholder={'Établissement *'}
                             required={true}
                             onChange={(event)=>handeleInstitut(event)}
                         />

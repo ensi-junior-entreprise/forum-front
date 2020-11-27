@@ -49,9 +49,9 @@
   },
   {
     "id": 4,
-    "title": "MS Solutions",
-    "shortDesc": "Dans un monde résolument numérique et connecté, nous fournissons à nos clients des services, des produits et des solutions de paiement électronique, de sécurisation des transactions, et de gestion de données monétiques. Forte d'une expérience de plus de 15 ans de son management dans le domaine de la monétique, MS Solutions est présente sur la globalité des processus de la chaîne des systèmes de paiement. Nous collaborons ainsi avec un vaste portefeuille de clients : banques, opérateurs mobiles, administrations / gouvernements et grande distribution.",
-    "thumb": "partenaires/ms solutions.jpg",
+    "title": "Talan",
+    "shortDesc": "Pour répondre aux défis d’un monde de plus en plus complexe, nous aidons nos clients à s’inscrire dans des cycles courts de transformation, de leur conception à leur mise en œuvre. Pour ce faire, nous nous appuyons à la fois sur le levier technologique et sur la force de notre ADN basé sur l’intelligence collective, l'agilité et le goût d’entreprendre. L’intelligence collective consiste à conjuguer la diversité des expertises des femmes et des hommes du groupe avec celles de nos clients et de nos partenaires. L’agilité nous permet de capitaliser sur nos expériences et de nous réinventer à chaque mission avec pragmatisme et humilité.  Chez Talan, nous avons des convictions mais pas de certitudes. Nous avons le goût d’entreprendre, d’oser, d’être audacieux et n’avons pas peur d’expérimenter.",
+    "thumb": "partenaires/talan.jpg",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -84,6 +84,22 @@
     "title": "3S",
     "shortDesc": "Cœur du pôle IT du groupe, 3S, l’entreprise agile, est parvenue, au fil de ses 30 ans d’existence, à se positionner en tant qu’Intégrateur N°1 en Tunisie et en Afrique du Nord. Ses principaux chiffres de 2019 témoignent de sa solidité et de sa marge de progression, gages de maintien d’une position pionnière dans le futur. Nos ressources humaines sont hautement qualifiées. Nous en développons le savoir faire et l’expertise à travers un processus continu de formations et de certifications, pour vous garantir des services de qualité, adaptés à vos besoins. Nos valeurs sont au centre de notre action. Ancrées au sein de l’entreprise et partagées par nos équipes, elles sont focalisées sur l’expérience client pour un avenir meilleur.",
     "thumb": "partenaires/3s.jpg",
+    "previewImages": [
+      "service/details/03.jpg",
+      "service/details/01.jpg",
+      "service/details/02.jpg"
+    ],
+    "aboutServiceDesc": "<p>Voluptatum delenitied atqued corrupti is eseted quased stias cepturi sint aete non provident, csimilique sunt dunt labore ete dolored magnam aliquam quaerat Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun</p>   <p>Corrupti deleniti atque magnam is es et quas stias cepturi sint aete non provident, similique sunt dunt ut labore et dolore magnam aliquam quaerat Neque porro quisquam est dolorem</p>",
+    "features": [
+      "Voluptatum deleniti atque corrupti is es et quas stias cepturi sint aete non provident, similique sunt dunt ut labore et dolore magnam aliquam quaerat",
+      "Atque corrupti is es et quas stias cepturi sint aete non provident, similique sunt dunt ut labore et dolore magnam aliquam quaerat"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "STB",
+    "shortDesc": "La Société Tunisienne de Banque est née au lendemain de l'indépendance. Entrée en activité le 26 mars 1958, c'est le premier établissement bancaire spécifiquement tunisien conçu afin de contribuer efficacement au développement économique et social du jeune Etat indépendant et ce, dans un contexte de désinvestissement, de désorganisation du marché de crédit et d'une véritable hémorragie de capitaux vers l'étranger.",
+    "thumb": "partenaires/stb.jpg",
     "previewImages": [
       "service/details/03.jpg",
       "service/details/01.jpg",

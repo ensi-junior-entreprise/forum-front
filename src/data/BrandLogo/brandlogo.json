@@ -10,13 +10,23 @@
     "URL": "/"
   },
   {
-    "id": 4,
+    "id": 3,
     "logoSrc": "brand-logo/minotore.png",
     "URL": "/"
   },
   {
-    "id": 3,
+    "id": 4,
     "logoSrc": "brand-logo/habemus.png",
+    "URL": "/"
+  },
+  {
+    "id": 5,
+    "logoSrc": "brand-logo/instadeep.png",
+    "URL": "/"
+  },
+  {
+    "id": 6,
+    "logoSrc": "brand-logo/machinestalk.png",
     "URL": "/"
   }
 ]
